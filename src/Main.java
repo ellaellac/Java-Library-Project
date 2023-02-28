@@ -9,10 +9,11 @@ public class Main {
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));
-            String line="";
+            String line;
 
             while((line = br.readLine())!= null){
-                System.out.println(line);
+                String [] columns = line.split(",");
+                System.out.println(columns[1]);
             }
         } catch (FileNotFoundException error){
             error.printStackTrace();
