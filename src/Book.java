@@ -5,6 +5,7 @@ public class Book {
     private String Genre;
     private String SubGenre;
     private String Publisher;
+    private boolean onLoan = false;
 
     //Constructor
 
@@ -69,18 +70,27 @@ public class Book {
         Publisher = publisher;
     }
 
+    public boolean isOnLoan() {
+        return onLoan;
+    }
+
+    public void setOnLoan(boolean onLoan) {
+        this.onLoan = onLoan;
+    }
+
     //toString
 
 
     @Override
     public String toString() {
         return "Book{" +
-                "number='" + number + '\'' +
+                "number=" + number +
                 ", title='" + title + '\'' +
                 ", Author='" + Author + '\'' +
                 ", Genre='" + Genre + '\'' +
                 ", SubGenre='" + SubGenre + '\'' +
                 ", Publisher='" + Publisher + '\'' +
+                ", onLoan=" + onLoan +
                 '}';
     }
 }
