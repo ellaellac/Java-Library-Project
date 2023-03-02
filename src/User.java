@@ -3,11 +3,14 @@ import java.util.List;
 
 public class User {
 
-    private static int id = 0;
+    private static int uniqueId = 0;
+
+    private int id;
     private String name;
     private List<Book> borrowedBooks = new ArrayList<>();
 
     public User(String name, List<Book> borrowedBooks) {
+        this.id = ++uniqueId;
         this.name = name;
         this.borrowedBooks = borrowedBooks;
     }
