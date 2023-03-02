@@ -1,3 +1,5 @@
+package org.example;
+
 public class Book {
     private int number;
     private String title;
@@ -94,3 +96,4 @@ public class Book {
                 '}';
     }
 }
+

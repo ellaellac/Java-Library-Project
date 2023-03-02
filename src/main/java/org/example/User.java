@@ -1,4 +1,6 @@
-import java.util.ArrayList;
+package org.example;
+
+
 import java.util.List;
 
 public class User {
@@ -7,20 +9,19 @@ public class User {
 
     private int id;
     private String name;
-    private List<Book> borrowedBooks = new ArrayList<>();
+    private List<Book> borrowedBooks;
 
-    public User(String name, List<Book> borrowedBooks) {
+    public User(String name) {
         this.id = ++uniqueId;
         this.name = name;
-        this.borrowedBooks = borrowedBooks;
     }
 
-    public static int getId() {
+    public int getId() {
         return id;
     }
 
-    public static void setId(int id) {
-        User.id = id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -48,3 +49,4 @@ public class User {
     }
 
 }
+

@@ -1,15 +1,12 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+package org.example;
+
+import java.io.*;
 import java.util.ArrayList;
 
 public class BookList {
 
     private String path;
-
     private ArrayList<Book> books = new ArrayList<>();
-
 
     public BookList(String path) throws IOException {
         this.path = path;
