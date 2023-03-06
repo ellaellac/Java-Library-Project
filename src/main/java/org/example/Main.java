@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        BookList bookList = new BookList("C:/Users/cwyel/nology2/java-library/books_data.csv");
+        BookList bookList = new BookList("C:/Users/cwyel/nology2/Java-library-Project/books_data.csv");
         System.out.println(bookList.getBooks());
 
 //        -- Users --
