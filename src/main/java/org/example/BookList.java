@@ -8,7 +8,7 @@ public class BookList {
     private String path;
     private ArrayList<Book> books = new ArrayList<>();
 
-    public BookList(String path) throws IOException {
+    public BookList(String path) {
         this.path = path;
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));

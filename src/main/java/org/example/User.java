@@ -1,8 +1,6 @@
 package org.example;
 
-
 import java.util.List;
-
 public class User {
 
     private static int uniqueId = 0;
@@ -43,10 +41,10 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", borrowedBooks=" + borrowedBooks +
                 '}';
     }
-
 }
 
